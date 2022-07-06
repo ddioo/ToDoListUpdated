@@ -134,18 +134,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uH2-L5-8uN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uH2-L5-8uN">
                                 <rect key="frame" x="10" y="188" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOa-1g-kEk">
+                                <rect key="frame" x="10" y="391" width="394" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Done "/>
+                                <connections>
+                                    <action selector="doneTapped:" destination="a2g-u8-FKH" eventType="touchUpInside" id="ypi-qM-RM3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vAs-Dn-g6q"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="vAs-Dn-g6q" firstAttribute="trailing" secondItem="uH2-L5-8uN" secondAttribute="trailing" constant="10" id="GDu-5E-Nah"/>
+                            <constraint firstItem="QOa-1g-kEk" firstAttribute="top" secondItem="uH2-L5-8uN" secondAttribute="bottom" constant="182" id="HJL-Nn-z3y"/>
                             <constraint firstItem="uH2-L5-8uN" firstAttribute="leading" secondItem="vAs-Dn-g6q" secondAttribute="leading" constant="10" id="V6S-k6-s5u"/>
+                            <constraint firstItem="vAs-Dn-g6q" firstAttribute="trailing" secondItem="QOa-1g-kEk" secondAttribute="trailing" constant="10" id="ZqK-Et-AUF"/>
+                            <constraint firstItem="QOa-1g-kEk" firstAttribute="leading" secondItem="vAs-Dn-g6q" secondAttribute="leading" constant="10" id="q2G-vM-RHo"/>
                             <constraint firstItem="uH2-L5-8uN" firstAttribute="top" secondItem="vAs-Dn-g6q" secondAttribute="top" constant="100" id="zvY-Do-eMO"/>
                         </constraints>
                     </view>
